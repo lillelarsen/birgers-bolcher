@@ -1,0 +1,23 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+	<section>
+            <h1><%= title %></h1>
+            <p><%= description %></p>
+        <% results.forEach(result => { %> 
+            <div class="results">
+            <h2><%= result.name %></h2>
+                <ul>
+                    <li>Farve: <%= result.color %></li>
+                    <li>Vægt: <%= result.weight %></li>
+                    <li>Surhed: <%= result.flavour_sourness %></li>
+                    <li>Styrke: <%= result.flavour_strenght %></li>
+                    <li>Type: <%= result.flavour_type %></li>
+                    <li>Råmateriale pris:<%= result.raw_materials_price %></li>
+                </ul>
+            </div>
+        <% }); %>
+	</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

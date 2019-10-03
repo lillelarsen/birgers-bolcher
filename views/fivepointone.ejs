@@ -1,0 +1,17 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+	<section>
+        <% results.forEach(result => { %> 
+            <div class="results">
+            <h2><%= result.name %></h2>
+                <ul>
+                    <li>Kilopris med moms: <%= result.price_vat %> Kr.</li>
+                    <li>Kilopris uden moms: <%= result.price_no_vat %> Kr.</li>
+                </ul>
+            </div>
+        <% }); %>
+	</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

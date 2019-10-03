@@ -1,0 +1,15 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+	<section>
+        <h1><%= title %></h1>
+        <p><%= description %></p>
+        <% results.forEach(result => { %> 
+            <div class="results">
+            <h2><%= result.name %></h2>
+            </div>
+        <% }); %>
+	</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>
