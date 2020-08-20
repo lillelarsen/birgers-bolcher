@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/rts-cmk/wi83-kodebase-a#readme",
   "dependencies": {
-    "bcrypt": "^3.0.0",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
